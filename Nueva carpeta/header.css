@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav__responsive-ul {
+    display: none;
+}
+
+
+
+
+.nav {
+    background-color: #000000;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 10px;
+}
+.nav__li a{
+    color: #ff0000;
+    text-decoration: none;
+}
+.nav__li i{
+    width: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.nav__li a:hover{
+    border: 1px solid #ffffff;
+    padding-left: 5px;
+    background-color: #424949;
+    border-right: 20px solid transparent;
+    transition: background-color 0.2s ease;
+    }
+
+.nav__responsive-button-container{
+    position: absolute;
+    width: 100%;
+    font-size: 35px;
+    background-color: #000000;
+    margin-top: -65px;
+    z-index: 100;
+}
+.nav__responsive-button{
+    padding: 10px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    .people{
+        display: none;
+    }
+    .nav__ul{
+        display: none;
+    }
+    .nav__responsive-ul{
+        list-style: none;
+        color: #ffffff;
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 55px;
+        padding-top: 10px;
+        height: 10px;
+    }
+    .nav{
+        height: 55px;
+        width: 100%;
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .nav__responsive-li i{
+        width: 30px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .nav__responsive-li a{
+        color: #ff0000;
+        text-decoration: none;
+    }
+    .nav__li-container{
+        background-color: #000000;
+        top: -1000px;
+        position: relative;
+        height: calc(100vh - 55px);
+        transition: all 2s;
+        z-index: 1;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: -10px;
+    }
+    .nav__responsive-li a:hover{
+        border: 1px solid #ffffff;
+        padding-left: 5px;
+        background-color: #424949;
+        border-right: 20px solid transparent;
+        transition: ease .4s;
+    }
+    }
+    .nav__ul{
+       text-align: center;
+       padding-right: 55px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container section{
+    width: 100%;
+    height: 5222px;
+    background: #D0D3D4;
+    
+}
+.people{
+    display: relative;
+    width: 30%;
+    height: 522px;
+    background: #000000;
+    border-radius: 25px 0px 0px 25px;
+    float: right;
+    margin: auto;
+    padding-top: 100px;
+}
+.people li{
+    color: #ffffff;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+}
+.relleno{
+    width: 100%;
+    background: #D0D3D4;
+}
+
+
+

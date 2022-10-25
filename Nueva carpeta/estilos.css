@@ -1,0 +1,320 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html{background-color: white;}
+h1{ font-size: 3em;}
+h2{ font-size: 1.75em;}
+h3{ font-size: 1.55em;}
+p { font-size: 1.25em;}
+li{ list-style: none;}
+
+
+
+button{
+    background-color: #000000;
+    font-size: 1.40em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #0000;
+    color: #ff0000
+}
+button:hover{
+    background-color: #424949;
+    color: #ff0000;
+}
+
+.BuildTeam b{
+    color: orange;
+}
+
+
+.container{
+    max-width: 720px;
+    margin: auto;
+
+}
+
+
+
+
+#hero button{
+    font-size: 2em;
+}
+#hero{
+    background-image: url(builders.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-weight: bold;
+    color: #ff0000;
+ }
+ #Informacion{
+    font-size: 1.5em;
+}
+#Informacion .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+
+
+#nuestros-miembros{
+    list-style: none;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+#nuestros-miembros .container{
+    padding: 100px 0px;
+}
+#nuestros-miembros li{
+    background-color: orange;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px 70px;
+    margin: 10px;
+}
+
+
+
+
+#builders p{
+    display: flex;
+}
+#builders h4{
+    color: yellow;
+    display: inline-block;
+}
+#builders .carta{
+    font-size: 20px;
+    margin-top: 0px;
+}
+.carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 30px;
+}
+#caracteristicas li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+
+
+#Unete-Al-Build h2{
+    font-size: 3em;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#Unete-Al-Build{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5282904fe4b06dd1d21607b7/1389409026954-YLHEYZER4XBBBBPMAW6U/Minecraft-logo.png);
+    color: black;
+    height: 70vh;
+}
+#Unete-Al-Build button{
+    font-size: 2.5em;
+}
+footer p{
+    color: rgb(100 100 100);
+}
+footer .container{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav__responsive-ul {
+    display: none;
+}
+
+
+
+
+.nav {
+    background-color: #000000;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 10px;
+}
+.nav__li a{
+    color: #ff0000;
+    text-decoration: none;
+}
+.nav__li i{
+    width: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.nav__li a:hover{
+    border: 1px solid #ffffff;
+    padding-left: 5px;
+    background-color: #424949;
+    border-right: 20px solid transparent;
+    transition: background-color 0.2s ease;
+    }
+
+.nav__responsive-button-container{
+    position: absolute;
+    width: 100%;
+    font-size: 35px;
+    background-color: #000000;
+    margin-top: -65px;
+    z-index: 100;
+}
+.nav__responsive-button{
+    padding: 10px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    .people{
+        display: none;
+    }
+    .nav__ul{
+        display: none;
+    }
+    .nav__responsive-ul{
+        list-style: none;
+        color: #ffffff;
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 55px;
+        padding-top: 10px;
+        height: 10px;
+    }
+    .nav{
+        height: 55px;
+        width: 100%;
+    }
+    .nav__responsive-li{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .nav__responsive-li i{
+        width: 30px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .nav__responsive-li a{
+        color: #ff0000;
+        text-decoration: none;
+    }
+    .nav__li-container{
+        background-color: #000000;
+        top: -1000px;
+        position: relative;
+        height: calc(100vh - 55px);
+        transition: all 2s;
+        z-index: 1;
+        width: 80%;
+        padding-top: 10px;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{
+        top: -10px;
+    }
+    .nav__responsive-li a:hover{
+        border: 1px solid #ffffff;
+        padding-left: 5px;
+        background-color: #424949;
+        border-right: 20px solid transparent;
+        transition: ease .4s;
+    }
+    }
+ .nav__ul{
+       padding: 25px;
+       text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
